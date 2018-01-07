@@ -1,0 +1,63 @@
+<ion-header >
+    <ion-navbar color="secondary">
+    <ion-toolbar >
+           <ion-title class="titl"  >
+       <h3 class="titl"> MaiTable</h3>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button   ion-end class="btn-tl"><ion-icon name="more"></ion-icon></button>
+      </ion-buttons>
+      </ion-toolbar>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="hello">
+<ion-grid>
+<ion-row>
+  <ion-col col-3>
+    Day
+  </ion-col>
+  <ion-col col-2>
+        StartTime
+      </ion-col>
+      <ion-col col-2>
+            Class
+          </ion-col>
+          <ion-col col-2>
+             Sub
+              </ion-col>
+              <ion-col col-2>
+                  Room
+                  </ion-col>
+                                          
+  <ion-col col-1>
+    Dur
+  </ion-col>
+</ion-row>
+<ion-row *ngFor="let item of items">
+  <ion-col col-3>
+{{item.day}}
+  </ion-col>
+  <ion-col col-2>
+        {{item.starttime}}
+          </ion-col>
+          <ion-col col-2>
+                {{item.sem}}{{item.grp}}
+                  </ion-col>
+                  <ion-col col-2>
+                        {{item.subject}}
+                          </ion-col>
+                          <ion-col col-2>
+                                {{item.room}}
+                                  </ion-col>
+          <ion-col col-1>
+    {{ item.duration }}
+  </ion-col>
+</ion-row>
+
+
+
+
+</ion-grid>
+</ion-content>

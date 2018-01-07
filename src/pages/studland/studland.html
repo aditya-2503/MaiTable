@@ -1,0 +1,50 @@
+<ion-header  >
+    
+       <ion-toolbar color="secondary" >
+              <ion-title  >
+          <h3 class="titl"> MaiTable</h3>
+         </ion-title>
+         <ion-buttons end>
+           <button ion-button (click)="onPop($event)" ><ion-icon name="more"></ion-icon></button>
+         </ion-buttons>
+         </ion-toolbar>
+             
+     </ion-header>
+     
+     <ion-content color="bcg">
+    
+   <ion-list>
+   <ion-item class="list_item" (click)="onMon()" >
+    MONDAY
+   </ion-item>
+   <ion-item class="list_item" (click)="onTuesday()" >
+     TUESDAY
+    </ion-item>
+    <ion-item class="list_item"(click)="onWednesday()">
+     WEDNESDAY
+    </ion-item>
+    <ion-item class="list_item"(click)="onThursday()">
+     THURSDAY
+    </ion-item>
+    <ion-item class="list_item"(click)="onFriday()">
+     FRIDAY
+    </ion-item>
+    
+   </ion-list>
+     <ion-fab bottom right >
+       <button ion-fab color="secondary"  ><ion-icon name="add"></ion-icon></button>
+       <ion-fab-list side="top">
+          <p >
+          <button  class="fabbtn" (click)="onWeekly()" >Weekly Schedule</button></p>
+           
+           <p > <button class="fabbtn" (click)="onGrpw()" >Subject Wise Schedule</button></p>
+           
+           <p > <button  class="fabbtn" (click)="onLabw()" >Lab Wise Schedule</button></p>
+           
+         
+           
+           <!--p> <button  color="secondary" ></button></p-->
+       </ion-fab-list>
+     </ion-fab>
+   
+   </ion-content>

@@ -4,8 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import{ TableService } from '../app/services/Table_services';
+//import{ NewService} from '../app/services/Newserv';
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[TableService]
 })
 export class MyApp {
   rootPage:any = HomePage;

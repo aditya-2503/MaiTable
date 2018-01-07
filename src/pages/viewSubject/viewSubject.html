@@ -1,0 +1,61 @@
+<ion-header >
+    <ion-navbar color="secondary">
+    <ion-toolbar >
+           <ion-title class="titl"  >
+       <h3 class="titl"> MaiTable</h3>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button   ion-end class="btn-tl"><ion-icon name="more"></ion-icon></button>
+      </ion-buttons>
+      </ion-toolbar>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="hello">
+     <div>   <p> <ion-list>
+                <ion-item>
+                  <ion-label fixed>Subject</ion-label>
+                  <ion-select [(ngModel)]="subject" name='subject' (ionChange)="chnSub()">
+                    <ion-option *ngFor="let item of items1">{{ item.subject }}</ion-option>
+                    
+                    
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </p>
+            
+            </div>
+    <p>  <ion-grid>
+<ion-row>
+  <ion-col col-3>
+    Starting Time
+  </ion-col>
+  <ion-col col-6>
+    <p>Schedule</p>
+  </ion-col>
+  <ion-col col-3>
+    Duration
+  </ion-col>
+</ion-row>
+<ion-row *ngFor="let item of items">
+  <ion-col col-3>
+{{item.starttime}}
+  </ion-col>
+  <ion-col col-6>
+    {{ item.subject}}
+    {{ item.room}}
+    {{ item.group}}
+{{ item.type}}
+</ion-col>
+  <ion-col col-3>
+    {{ item.duration }}
+  </ion-col>
+</ion-row>
+
+
+
+
+</ion-grid>
+</p>
+</ion-content>

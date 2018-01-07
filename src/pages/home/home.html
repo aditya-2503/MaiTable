@@ -1,14 +1,28 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+<ion-header color="secondary" >
+  <ion-toolbar color="secondary"  >
+    <ion-title >
+        <h3 class="titl"> MaiTable</h3>
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="hello">
+  <button ion-button round large class="btn1" (click)="onbtn1()" color="secondary" >Faculty</button>
+  <button ion-button round large class="btn2" (click)="onbtn2()" color="secondary" >Student</button>
+  
 </ion-content>
+  
+  <!--ion-footer  >
+    <ion-toolbar color="light">
+     
+      <ion-buttons >
+        <button ion-button>
+         <ion-icon name="logo-facebook" color="primary"></ion-icon>
+        </button>
+        <button ion-button >
+          <ion-icon name="logo-googleplus" style="color:red" ></ion-icon>
+         </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer-->
+
